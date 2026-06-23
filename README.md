@@ -38,16 +38,24 @@
 - Retrieval pipeline: ingest CSV/PDF into Elasticsearch, then search title/snippet/category fields.
 
 ```mermaid
-graph TD
-  A[User (Browser)] -->|HTTP| B[Frontend - Next.js]
-  B -->|REST| C[Backend - FastAPI]
-  C --> D[ChatWorkflow & Agents]
-  D --> E[LLM Provider (HuggingFace Router)]
-  D --> F[SearchService / Elasticsearch]
-  D --> G[Memory / Redis]
-  C --> H[Health & Logging]
-```
+flowchart TD
+    User["User"]
+    Frontend["Next.js Frontend"]
+    Backend["FastAPI Backend"]
+    Workflow["ChatWorkflow & Agents"]
+    LLM["HuggingFace Router"]
+    Search["Elasticsearch"]
+    Memory["Redis"]
+    Logs["Health & Logging"]
 
+    User -->|HTTP| Frontend
+    Frontend -->|REST API| Backend
+    Backend --> Workflow
+    Workflow --> LLM
+    Workflow --> Search
+    Workflow --> Memory
+    Backend --> Logs
+```
 # Tech Stack
 
 - Backend: Python 3.9, FastAPI, pydantic
