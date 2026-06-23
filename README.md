@@ -1,7 +1,7 @@
-# AgenticAI
+# SynapseAI – Multi-Agent RAG Platform
 
 - One-line summary: Multi-agent RAG starter app with FastAPI backend, Redis memory, Elasticsearch retrieval, and a minimal Next.js frontend.
-- Short project overview: AgenticAI provides a backend scaffold for ingesting PDF/CSV content, indexing it into Elasticsearch, and answering authenticated chat requests through coordinated agents.
+- Short project overview: SynapseAI – Multi-Agent RAG Platform provides a backend scaffold for ingesting PDF/CSV content, indexing it into Elasticsearch, and answering authenticated chat requests through coordinated agents.
 - Main objective: Offer a maintainable developer-focused foundation for building a retrieval-enhanced conversational assistant.
 
 # Features
@@ -68,7 +68,7 @@ flowchart TD
 # Project Structure
 
 ```
-AgenticAI/
+SynapseAI – Multi-Agent RAG Platform/
 ├─ backend/
 │  ├─ app/
 │  │  ├─ agents/                # Agents: supervisor, search, summary
@@ -190,4 +190,4 @@ Sample queries:
 
 # Conclusion
 
-AgenticAI is a compact, developer-focused FastAPI scaffold for authenticated chat, PDF/CSV ingestion, Elasticsearch retrieval, and LLM-driven agent workflows.
+SynapseAI – Multi-Agent RAG Platform is a compact, developer-focused FastAPI scaffold for authenticated chat, PDF/CSV ingestion, Elasticsearch retrieval, and LLM-driven agent workflows.
