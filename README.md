@@ -69,14 +69,14 @@ High-level components:
 Mermaid - System architecture:
 
 ```mermaid
-graph TD;
-  A[User (Browser)] -->|HTTP| B[Frontend - Next.js]
-  B -->|REST| C[Backend - FastAPI]
-  C --> D[ChatWorkflow & Agents]
-  D --> E[LLM Provider (HuggingFace Router / OpenAI-compatible)]
-  D --> F[SearchService / Elasticsearch]
-  D --> G[Memory / Redis]
-  C --> H[Langfuse / OpenTelemetry (optional)]
+graph TD
+  A["User (Browser)"] -->|HTTP| B["Frontend - Next.js"]
+  B -->|REST| C["Backend - FastAPI"]
+  C --> D["ChatWorkflow & Agents"]
+  D --> E["LLM Provider (HuggingFace Router / OpenAI-compatible)"]
+  D --> F["SearchService / Elasticsearch"]
+  D --> G["Memory / Redis"]
+  C --> H["Langfuse / OpenTelemetry (optional)"]
 ```
 
 Frontend architecture
